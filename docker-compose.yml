@@ -1,0 +1,24 @@
+services:
+  api:
+    build: ./backend
+    environment:
+      DATABASE_URL: sqlite:////app/data/recall_commit.db
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
+    ports:
+      - "${API_PORT:-8000}:8000"
+    volumes:
+      - recall_ai_data:/app/data
+    restart: unless-stopped
+
+  web:
+    build: ./frontend
+    ports:
+      - "${WEB_PORT:-5173}:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  recall_ai_data: {}

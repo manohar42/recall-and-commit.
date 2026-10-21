@@ -1,0 +1,237 @@
+=== oct-001 | 2026-10-01 08:02 | Standup: release 4.2 kickoff
+Priya: Morning. So 4.2 is officially locked for the 22nd. Alex, where are we on the test plan?
+Alex: Draft's about 70 percent there. I still need the payments section from Omar.
+Omar: Sorry, that's on me. I'll send you the payment flows after lunch.
+Priya: Okay. Alex, can you have the full plan in the shared drive by Friday?
+Alex: Yes, I'll have the complete test plan in the drive by Friday at noon.
+Priya: Perfect. Nina, anything blocking?
+Nina: Just the login timeout bug. I'm still digging.
++ 5 | Publish the full 4.2 test plan to the shared drive | Priya | Friday at noon | 2026-10-02 12:00 | - | - | done
+
+=== oct-002 | 2026-10-01 19:40 | Leo: groceries and rent split
+Leo: Hey, did you see the electric bill? It jumped like forty bucks.
+Alex: Yeah, the AC has been running nonstop. Phoenix in October, man.
+Leo: Want to just split it like usual?
+Alex: Sure. I'll Venmo you my half tonight.
+Leo: Cool. Also we're out of eggs and coffee.
+Alex: I'm going to Fry's Saturday anyway, I'll grab both.
++ 4 | Venmo Leo half of the electric bill | Leo | tonight | 2026-10-01 21:00 | - | - | done
+
+=== oct-003 | 2026-10-02 12:15 | Maya: laptop shopping
+Maya: Okay I'm at Best Buy. The blue one is $899, the gray one is $1,049.
+Alex: The blue laptop is cheaper, but its battery life is not good enough. I read the reviews, it's like five hours.
+Maya: The gray model has better battery life and more storage. 512 versus 256.
+Alex: Let's choose the gray model, even though it costs a little more. You'll be carrying it to campus all day.
+Maya: Agreed. Gray it is. Can you help me set it up this weekend?
+Alex: Maybe Sunday? Let me see how Saturday goes first.
+Maya: No rush.
+
+=== oct-004 | 2026-10-02 16:30 | Nina: login timeout bug
+Nina: I think I found it. The session refresh fires twice when the tab sleeps.
+Alex: That matches what I saw. It only repros after about 20 minutes idle.
+Nina: I'll push a fix to staging by Monday morning.
+Alex: Great. Once it's on staging I'll run the idle-session tests and send you the results.
+Nina: Thanks. Ping me if it still logs you out.
++ 4 | Run the idle-session tests on Nina's login fix and send her the results | Nina | after the fix lands on staging | 2026-10-06 17:00 | - | - | done
+
+=== oct-005 | 2026-10-03 10:05 | Sam: moving plans
+Sam: So the lease on the new place starts the 24th. I'm officially moving that Saturday.
+Alex: The 24th? That's Maya's birthday, but it's at night, so I'm fine in the morning.
+Sam: Would you be able to help from like 9 to noon? I've got the truck from 8:30.
+Alex: Yeah, count me in. 9 to 12 works.
+Sam: You're a legend. I'll buy pizza.
+Alex: Deal. Get the good one, not the cardboard one.
++ 4 | Help Sam move to the new apartment | Sam | Saturday Oct 24, 9 a.m. to noon | - | 2026-10-24 09:00 | 2026-10-24 12:00 | open
+
+=== oct-006 | 2026-10-03 13:20 | Mom: Maya's birthday dinner
+Mom: Honey, for Maya's birthday I booked Lucia's for 6:30 on the 24th.
+Alex: Oh nice, she loves that place.
+Mom: Can you pick up the cake from Karsh's? I ordered it, it's paid for.
+Alex: Sure, what time do they close?
+Mom: Six. Pickup window is 4:30 to 5.
+Alex: Okay, I'll pick up the cake between 4:30 and 5 and bring it to Lucia's.
+Mom: And please don't be late to dinner this time.
+Alex: I won't, I promise. I'll be there by 6:30.
++ 6 | Pick up Maya's birthday cake from Karsh's Bakery | Mom | Saturday Oct 24, 4:30-5:00 p.m. | - | 2026-10-24 16:30 | 2026-10-24 17:00 | open
++ 8 | Attend Maya's birthday dinner at Lucia's | Mom | Saturday Oct 24, 6:30 p.m. | - | 2026-10-24 18:30 | 2026-10-24 20:30 | open
+
+=== oct-007 | 2026-10-03 17:45 | Chris: gym schedule
+Chris: You coming to the 6am class Monday?
+Alex: Ugh. Maybe. I've been sleeping terribly.
+Chris: Come on, it's leg day.
+Alex: That's exactly why I said maybe.
+Chris: Ha. I'll save you a spot anyway.
+
+=== oct-008 | 2026-10-05 09:10 | Standup: test environment
+Priya: Staging was down most of Friday. Do we know why?
+Alex: The database migration on staging failed halfway. Ops rolled it back Saturday.
+Priya: Okay. Can someone write up what happened?
+Omar: I can do that, I was on call. I'll have it written up by Wednesday.
+Priya: Thanks Omar. Alex, are we still on track?
+Alex: We lost about a day. I'll re-prioritize the smoke tests today and tell you by end of day if we need to cut scope.
+Priya: Good.
++ 6 | Re-prioritize the smoke tests and tell Priya whether scope must be cut | Priya | end of day | 2026-10-05 17:00 | - | - | done
+
+=== oct-009 | 2026-10-05 20:15 | Jordan: cricket watch party
+Jordan: India vs Australia final is Sunday the 11th. Watch party at mine, 9pm.
+Alex: Man, I wish. I've got a release crunch and I need to sleep.
+Jordan: It's the final!
+Alex: I know. I can't this time, sorry. Record the last overs for me?
+Jordan: Fine, traitor. I'll send you highlights.
+
+=== oct-010 | 2026-10-06 11:00 | Nina: login fix verification
+Nina: Fix is on staging. Build 4.2.0-rc3.
+Alex: Running the idle tests now. First pass looks clean.
+Nina: Nice.
+Alex: I'll leave it idle for an hour on three browsers and post the results in the channel by 3.
+Nina: Sounds good.
+Alex: Update: Chrome and Firefox are clean, Safari still logged me out once.
+Nina: Ugh. I'll look at Safari tomorrow.
+
+=== oct-011 | 2026-10-06 18:30 | Carla: lease renewal
+Carla: Hi Alex, it's Carla from the leasing office. Your lease is up November 30th.
+Alex: Hi Carla. What are the options?
+Carla: Six months at $1,640, or twelve months at $1,575.
+Alex: I'll need to talk to my roommate. Can I get back to you?
+Carla: Of course. I'd need a decision by the 23rd.
+Alex: Okay. I'll let you know by the 23rd.
++ 6 | Tell Carla our lease renewal decision | Carla | by Oct 23 | 2026-10-23 17:00 | - | - | open
+
+=== oct-012 | 2026-10-06 21:05 | Leo: lease decision
+Alex: Leasing office called. Six months is $1,640, twelve is $1,575.
+Leo: Twelve for sure. I'm not moving again before next fall.
+Alex: Same. Let's do twelve months then.
+Leo: Yeah. You'll handle the paperwork?
+Alex: Yeah, I'll tell Carla tomorrow and sign whatever she sends.
+Leo: Thanks man.
+
+=== oct-013 | 2026-10-07 09:30 | Priya: proposal for automation budget
+Priya: Leadership liked the idea of moving the regression suite to Playwright.
+Alex: Oh that's great.
+Priya: They want a short proposal. Costs, timeline, risks. Two pages max.
+Alex: I can draft that. When do you need it?
+Priya: First draft by next Wednesday, so I can review before the budget meeting.
+Alex: Okay, I'll send you a first draft by Wednesday the 14th.
++ 6 | Send Priya the first draft of the Playwright automation proposal | Priya | Wednesday Oct 14 | 2026-10-14 17:00 | - | - | done
+
+=== oct-014 | 2026-10-07 13:10 | Carla: lease confirmation
+Alex: Hi Carla, we'd like the twelve-month renewal at $1,575.
+Carla: Great choice. I'll email the renewal documents this week.
+Alex: Perfect. Is there a deadline to sign?
+Carla: By the 30th, please. You can sign electronically.
+Alex: Got it. I'll sign and send them back before the 30th.
++ 5 | Sign and return the lease renewal documents | Carla | before Oct 30 | 2026-10-30 17:00 | - | - | open
+
+=== oct-015 | 2026-10-07 19:50 | Maya: laptop setup
+Maya: The laptop came! It's so light.
+Alex: Told you. Did you transfer your files?
+Maya: Half of them. I'm scared I'll mess something up.
+Alex: Sunday works for me now. I'll come over at 2 and help you finish the setup.
+Maya: Thank you!!
++ 4 | Help Maya finish setting up her new laptop | Maya | Sunday 2 p.m. | - | 2026-10-11 14:00 | 2026-10-11 16:00 | done
+
+=== oct-016 | 2026-10-08 08:05 | Standup: bug triage
+Priya: Triage time. We have 14 open bugs tagged 4.2.
+Alex: Six are cosmetic. Three are duplicates of the Safari logout.
+Nina: Two of those are mine, I'll close them out today.
+Priya: Alex, can you run the triage meeting Thursday? I'm out.
+Alex: Sure, I'll run triage Thursday at 10.
+Priya: Thank you. Send notes after?
+Alex: Yep, I'll send the notes right after.
++ 5 | Run the 4.2 bug triage meeting | Priya | Thursday 10 a.m. | - | 2026-10-08 10:00 | 2026-10-08 10:45 | done
+
+=== oct-017 | 2026-10-08 18:40 | Dentist office: appointment
+Receptionist: Hi, this is Desert Smile Dental calling for Alex. We need to reschedule your cleaning on the 14th.
+Alex: Oh, okay. What do you have?
+Receptionist: We have Wednesday the 28th at 8 am or Friday the 30th at 3:30.
+Alex: The 28th at 8 works.
+Receptionist: Great, you're booked for October 28th at 8 am. Please arrive 10 minutes early.
+Alex: Will do, thanks.
++ 6 | Go to the dental cleaning at Desert Smile Dental | Desert Smile Dental | Wednesday Oct 28, 8 a.m. | - | 2026-10-28 08:00 | 2026-10-28 09:00 | open
+
+=== oct-018 | 2026-10-09 10:00 | Bug triage meeting notes
+Alex: Okay, let's go through the list. Safari logout first.
+Nina: I have a fix, but it touches the shared auth library.
+Omar: That makes me nervous this close to release.
+Alex: Agreed. Proposal: we ship 4.2 with a known-issue note for Safari and fix it in 4.2.1.
+Omar: I'm fine with that if support knows.
+Nina: Works for me. I'll have the 4.2.1 fix ready the week after release.
+Alex: Okay, decision is ship with the known issue. I'll send the notes and update the release checklist this afternoon.
++ 7 | Send triage notes and update the 4.2 release checklist | Priya | this afternoon | 2026-10-09 17:00 | - | - | done
+
+=== oct-019 | 2026-10-09 20:20 | Sam: pizza and boxes
+Sam: Do you have any boxes? I'm drowning.
+Alex: I have like six from when I moved. They're in the garage.
+Sam: Can I grab them this weekend?
+Alex: Sure, come by Saturday after 11.
+Sam: Perfect.
+
+=== oct-020 | 2026-10-10 11:45 | Fry's: grocery run with Leo
+Leo: Did you get the coffee?
+Alex: Got it. And eggs. Do we need anything else?
+Leo: Paper towels. And maybe that cold brew concentrate.
+Alex: Okay. Hey, I think we should start meal prepping on Sundays.
+Leo: I'm in if you cook and I clean.
+Alex: Ha, deal. Starting next Sunday.
+
+=== oct-021 | 2026-10-11 16:10 | Maya: laptop done
+Maya: Everything transferred. You're the best.
+Alex: Make sure the backup runs tonight.
+Maya: How do I know it ran?
+Alex: You'll get a little notification. If it doesn't show up, text me and I'll check it remotely.
+Maya: Okay!
+
+=== oct-022 | 2026-10-12 08:00 | Standup: release readiness
+Priya: Ten days to release. Status?
+Alex: Regression is at 82 percent pass. The failures are mostly the payments sandbox timing out.
+Omar: The sandbox provider had an outage this weekend.
+Priya: Can we rerun once it's stable?
+Alex: Yes. I'll rerun the payments regression tomorrow morning and share the report by noon.
+Priya: Thanks.
++ 5 | Rerun the payments regression and share the report | Priya | tomorrow by noon | 2026-10-13 12:00 | - | - | done
+
+=== oct-023 | 2026-10-12 19:00 | Mom: Thanksgiving
+Mom: Are you coming home for Thanksgiving or doing the San Diego thing with your friends?
+Alex: I haven't decided. Flights are pricey.
+Mom: Your aunt is coming this year.
+Alex: I know. Let me think about it this week.
+Mom: Okay. Just tell me by Halloween so I can plan food.
+Alex: I'll let you know before Halloween, promise.
++ 6 | Tell Mom whether I'm coming home for Thanksgiving | Mom | before Halloween | 2026-10-30 18:00 | - | - | open
+
+=== oct-024 | 2026-10-13 12:05 | Priya: payments report
+Alex: Report's in the drive. Pass rate is 96 percent now.
+Priya: That's a big jump. What's left?
+Alex: Two refund edge cases. They fail when the refund is partial and the currency is not USD.
+Priya: Is that a blocker?
+Alex: I'd call it a major but not a blocker. We don't have non-USD customers on refunds yet.
+Priya: Okay. Log them and we'll decide at go/no-go.
+
+=== oct-025 | 2026-10-13 18:15 | Chris: running
+Chris: Want to do the Tempe Town Lake loop Saturday morning?
+Alex: This Saturday? Sure, 7am?
+Chris: 7 works. 5 miles.
+Alex: I'll be there. Don't make fun of my pace.
+
+=== oct-026 | 2026-10-14 09:45 | Priya: proposal draft
+Alex: Sent you the Playwright proposal draft.
+Priya: Got it. I skimmed it. The cost section is solid, but the timeline feels optimistic.
+Alex: Fair. Six weeks assumed two people.
+Priya: Let's assume one and a half. Can you revise?
+Alex: Yes. I will send you the revised proposal by Friday afternoon.
+Priya: Great, that gives me the weekend before the budget meeting.
++ 5 | Send Priya the revised Playwright proposal | Priya | Friday afternoon | 2026-10-16 15:00 | - | - | done
+
+=== oct-027 | 2026-10-14 15:10 | Sam: lunch
+Alex: We should get lunch sometime next week.
+Sam: Yes! After the move maybe. My brain is all boxes right now.
+Alex: Totally. No pressure.
+
+=== oct-028 | 2026-10-15 08:10 | Standup: go/no-go prep
+Priya: Go/no-go is Tuesday the 20th at 2. I need a QA sign-off summary.
+Alex: One page?
+Priya: One page. Open bugs, pass rates, risks.
+Alex: Okay, I'll have the QA sign-off summary ready Monday evening so you can read it before the meeting.
+Omar: Can you include the refund edge cases?
+Alex: Yep, they'll be in the risk section.
++ 4 | Prepare the one-page QA sign-off summary for go/no-go | Priya | Monday evening | 2026-10-19 18:00 | - | - | open

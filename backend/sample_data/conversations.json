@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0",
+  "source": "sample",
+  "description": "Fictional October 2026 conversations for Recall & Commit. All people and events are invented.",
+  "conversations": [
+    {
+      "external_id": "oct-001",
+      "title": "Standup: release 4.2 kickoff",
+      "started_at": "2026-10-01T08:02:00-07:00",
+      "ended_at": "2026-10-01T08:06:09-07:00",
+      "participants": [
+        "Priya",
+        "Alex",
+        "Omar",
+        "Nina"
+      ],
+      "user_speaker": "Alex",
+      "utterances": [
+        {
+          "sequence": 1,
+          "speaker": "Priya",
+          "occurred_at": "2026-10-01T08:02:00-07:00",
+          "text": "Morning. So 4.2 is officially locked for the 22nd. Alex, where are we on the test plan?"
+        },
+        {
+          "sequence": 2,
+          "speaker": "Alex",
+          "occurred_at": "2026-10-01T08:02:20-07:00",
+          "text": "Draft's about 70 percent there. I still need the payments section from Omar."
+        },
+        {
+          "sequence": 3,
+          "speaker": "Omar",
+          "occurred_at": "2026-10-01T08:03:16-07:00",
+          "text": "Sorry, that's on me. I'll send you the payment flows after lunch."
+        },
+        {
+          "sequence": 4,
+          "speaker": "Priya",
+          "occurred_at": "2026-10-01T08:04:03-07:00",
+          "text": "Okay. Alex, can you have the full plan in the shared drive by Friday?"
+        },
+        {
+          "sequence": 5,
+          "speaker": "Alex",
+          "occurred_at": "2026-10-01T08:05:03-07:00",
+          "text": "Yes, I'll have the complete test plan in the drive by Friday at noon."
+        },
+        {
+          "sequence": 6,
+          "speaker": "Priya",
+          "occurred_at": "2026-10-01T08:05:24-07:00",
+          "text": "Perfect. Nina, anything blocking?"
+        },
+        {
+          "sequence": 7,
+          "speaker": "Nina",
+          "occurred_at": "2026-10-01T08:05:49-07:00",
+          "text": "Just the login timeout bug. I'm still digging."
+        }
+      ],
+      "seed_commitments": [
+        {
+          "utterance_sequence": 5,
+          "action_text": "Publish the full 4.2 test plan to the shared drive",
+          "counterparty": "Priya",
+          "due_text": "Friday at noon",
+          "due_at": "2026-10-02T12:00:00-07:00",
+          "starts_at": null,
+          "ends_at": null,
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "external_id": "oct-002",
+      "title": "Leo: groceries and rent split",
+      "started_at": "2026-10-01T19:40:00-07:00",
+      "ended_at": "2026-10-01T19:43:28-07:00",
+      "participants": [
+        "Leo",
+        "Alex"
+      ],
+      "user_speaker": "Alex",
+      "utterances": [
+        {
+          "sequence": 1,
+          "speaker": "Leo",
+          "occurred_at": "2026-10-01T19:40:00-07:00",
+          "text": "Hey, did you see the electric bill? It jumped like forty bucks."
+        },
+        {
+          "sequence": 2,
+          "speaker": "Alex",
+          "occurred_at": "2026-10-01T19:40:29-07:00",
+          "text": "Yeah, the AC has been running nonstop. Phoenix in October, man."
+        },
+        {
+          "sequence": 3,
+          "speaker": "Leo",
+          "occurred_at": "2026-10-01T19:41:01-07:00",
+          "text": "Want to just split it like usual?"
+        },
+        {
+          "sequence": 4,
+          "speaker": "Alex",
+          "occurred_at": "2026-10-01T19:41:24-07:00",
+          "text": "Sure. I'll Venmo you my half tonight."
+        },
+        {
+          "sequence": 5,
+          "speaker": "Leo",
+          "occurred_at": "2026-10-01T19:42:21-07:00",
+          "text": "Cool. Also we're out of eggs and coffee."
+        },
+        {
+          "sequence": 6,
+          "speaker": "Alex",
+          "occurred_at": "2026-10-01T19:43:08-07:00",
+          "text": "I'm going to Fry's Saturday anyway, I'll grab both."
+        }
+      ],
+      "seed_commitments": [
+        {
+          "utterance_sequence": 4,
+          "action_text": "Venmo Leo half of the electric bill",
+          "counterparty": "Leo",
+          "due_text": "tonight",
+          "due_at": "2026-10-01T21:00:00-07:00",
+          "starts_at": null,
+          "ends_at": null,
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "external_id": "oct-003",
+      "title": "Maya: laptop shopping",
+      "started_at": "2026-10-02T12:15:00-07:00",
+      "ended_at": "2026-10-02T12:20:14-07:00",
+      "participants": [
+        "Maya",
+        "Alex"
+      ],
+      "user_speaker": "Alex",
+      "utterances": [
+        {
+          "sequence": 1,
+          "speaker": "Maya",
+          "occurred_at": "2026-10-02T12:15:00-07:00",
+          "text": "Okay I'm at Best Buy. The blue one is $899, the gray one is $1,049."
+        },
+        {
+          "sequence": 2,
+          "speaker": "Alex",
+          "occurred_at": "2026-10-02T12:15:58-07:00",
+          "text": "The blue laptop is cheaper, but its battery life is not good enough. I read the reviews, it's like five hours."
+        },
+        {
+          "sequence": 3,
+          "speaker": "Maya",
+          "occurred_at": "2026-10-02T12:16:53-07:00",
+          "text": "The gray model has better battery life and more storage. 512 versus 256."
+        },
+        {
+          "sequence": 4,
+          "speaker": "Alex",
+          "occurred_at": "2026-10-02T12:17:42-07:00",
+          "text": "Let's choose the gray model, even though it costs a little more. You'll be carrying it to campus all day."
+        },
+        {
+          "sequence": 5,
+          "speaker": "Maya",
+          "occurred_at": "2026-10-02T12:18:22-07:00",
+          "text": "Agreed. Gray it is. Can you help me set it up this weekend?"
+        },
+        {
+          "sequence": 6,
+          "speaker": "Alex",
+          "occurred_at": "2026-10-02T12:18:55-07:00",
+          "text": "Maybe Sunday? Let me see how Saturday goes first."
+        },
+        {
+          "sequence": 7,
+          "speaker": "Maya",
+          "occurred_at": "2026-10-02T12:19:54-07:00",
+          "text": "No rush."
+        }
+      ]
+    },
+    {
+      "external_id": "oct-004",
+      "title": "Nina: login timeout bug",
+      "started_at": "2026-10-02T16:30:00-07:00",
+      "ended_at": "2026-10-02T16:32:03-07:00",
+      "participants": [
+        "Nina",
+        "Alex"
+      ],
+      "user_speaker": "Alex",
+      "utterances": [
+        {
+          "sequence": 1,
+          "speaker": "Nina",
+          "occurred_at": "2026-10-02T16:30:00-07:00",
+          "text": "I think I found it. The session refresh fires twice when the tab sleeps."
+        },
+        {
+          "sequence": 2,
+          "speaker": "Alex",
+          "occurred_at": "2026-10-02T16:30:14-07:00",
+          "text": "That matches what I saw. It only repros after about 20 minutes idle."
+        },
+        {
+          "sequence": 3,
+          "speaker": "Nina",
+          "occurred_at": "2026-10-02T16:30:30-07:00",
+          "text": "I'll push a fix to staging by Monday morning."
+        },
+        {
+          "sequence": 4,
+          "speaker": "Alex",
+          "occurred_at": "2026-10-02T16:31:29-07:00",
+          "text": "Great. Once it's on staging I'll run the idle-session tests and send you the results."
+        },
+        {
+          "sequence": 5,
+          "speaker": "Nina",
+          "occurred_at": "2026-10-02T16:31:43-07:00",
+          "text": "Thanks. Ping me if it still logs you out."
+        }
+      ],
+      "seed_commitments": [
+        {
+          "utterance_sequence": 4,
+          "action_text": "Run the idle-session tests on Nina's login fix and send her the results",
+          "counterparty": "Nina",
+          "due_text": "after the fix lands on staging",
+          "due_at": "2026-10-06T17:00:00-07:00",
+          "starts_at": null,
+          "ends_at": null,
+          "status": "done"
+        }
+      ]
+    }
+
+  ]
+    
+  }
